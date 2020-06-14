@@ -1,0 +1,17 @@
+{% extends "base_cv.html" %}
+{% block css %}<link href="../../static/css/skill.css" rel="stylesheet" type="text/css">{% endblock %}
+
+{% block content %}
+    {% load i18n %}
+    <div class="fixed-top text-right p-4">
+        <span>More detailed version <a href="{% url "skillss_detailed" %}">here</a></span>
+    </div>
+    <div id="app">
+        <skill v-for="skill in skills" v-bind:skill="skill"></skill>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script type="text/javascript" src="../static/js/skill_js.js"></script>
+{% endblock %}

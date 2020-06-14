@@ -1,0 +1,188 @@
+html, body {
+  height: 100%;
+}
+/*.label
+{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}*/
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: wrap row;
+  height: 100vh;
+}
+#app [class^=devicon-] {
+  vertical-align: middle;
+}
+#app .skill {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+  transition: all 0.5s ease;
+}
+#app .skill:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ddd;
+  transition: all 0.3s ease;
+}
+#app .skill .children {
+  cursor: pointer;
+}
+#app .skill .children-container .skill {
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transform-style: flat;
+  transition: all 0.3s;
+}
+#app .skill .children-container .skill:nth-child(1) {
+  transition-delay: 0.2s;
+}
+#app .skill .children-container .skill:nth-child(2) {
+  transition-delay: 0.4s;
+}
+#app .skill .children-container .skill:nth-child(3) {
+  transition-delay: 0.6s;
+}
+#app .skill .children-container .skill:nth-child(4) {
+  transition-delay: 0.8s;
+}
+#app .skill .children-container .skill:nth-child(5) {
+  transition-delay: 1s;
+}
+#app .skill .children-container .skill:nth-child(6) {
+  transition-delay: 1.2s;
+}
+#app .skill .children-container .skill:nth-child(7) {
+  transition-delay: 1.4s;
+}
+#app .skill .children-container .skill:nth-child(8) {
+  transition-delay: 1.6s;
+}
+#app .skill .children-container .skill:nth-child(9) {
+  transition-delay: 1.8s;
+}
+#app .skill .children-container .skill:nth-child(10) {
+  transition-delay: 2s;
+}
+#app .skill .skill-name {
+  transition: all 0.3s ease;
+}
+#app .skill.open {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#app .skill.open:before {
+  width: 100vw;
+}
+#app .skill.open > .children-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap row;
+  background: rgba(255, 255, 255, 1);
+}
+#app .skill.open > .skill-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translateX(-100%);
+  color: #ddd;
+  font-size: 300%;
+  visibility: hidden;
+  transition: all 0s ease;
+}
+#app .skill.open > .skill-name .label {
+  display: none;
+}
+#app .skill.open > .skill-name:before {
+  content: '< ';
+}
+#app .skill.open.ended:before {
+  left: 100vw;
+  width: 0;
+}
+#app .skill.open.ended > .children-container > .skill {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+#app .skill.open.ended > .skill-name {
+  visibility: visible;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+#app > .skill, #app > .skill.open {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10vh);
+  animation: enterIn 0.5s ease;
+  animation-fill-mode: forwards;
+}
+#app > .skill:nth-child(1), #app > .skill.open:nth-child(1) {
+  animation-delay: 0.5s;
+}
+#app > .skill:nth-child(2), #app > .skill.open:nth-child(2) {
+  animation-delay: 1s;
+}
+#app > .skill:nth-child(3), #app > .skill.open:nth-child(3) {
+  animation-delay: 1.5s;
+}
+#app > .skill:nth-child(4), #app > .skill.open:nth-child(4) {
+  animation-delay: 2s;
+}
+#app > .skill:nth-child(5), #app > .skill.open:nth-child(5) {
+  animation-delay: 2.5s;
+}
+#app > .skill:nth-child(6), #app > .skill.open:nth-child(6) {
+  animation-delay: 3s;
+}
+#app > .skill:nth-child(7), #app > .skill.open:nth-child(7) {
+  animation-delay: 3.5s;
+}
+#app > .skill:nth-child(8), #app > .skill.open:nth-child(8) {
+  animation-delay: 4s;
+}
+#app > .skill:nth-child(9), #app > .skill.open:nth-child(9) {
+  animation-delay: 4.5s;
+}
+#app > .skill:nth-child(10), #app > .skill.open:nth-child(10) {
+  animation-delay: 5s;
+}
+@keyframes enterIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

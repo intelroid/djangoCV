@@ -1,0 +1,151 @@
+{% extends "base_cv.html" %}
+
+{% block content %}
+    <div class="fixed-top text-right p-4">
+        {% if user_using_mobile %}
+            <div class="collapse" id="navbarHeader" style="background: rgba(255, 255, 255, 0.93);">
+                <div class="container">
+                    <div class="row">
+                        <div class="sidebar-sticky">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="{% url "cv" %}" class="nav-link active">
+                                        <i class="fas fa-home fa-lg"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url "about" %}" class="nav-link">
+                                        <i class="fas fa-user-tie fa-lg"></i>
+                                        <span>About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "skills" %}">
+                                      <i class="fas fa-cogs fa-lg"></i>
+                                      <span>Skills</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "experience" %}">
+                                      <i class="fas fa-briefcase fa-lg"></i>
+                                      <span>Experience</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "education" %}">
+                                      <i class="fas fa-graduation-cap fa-lg"></i>
+                                      <span>Education</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "portfolio" %}">
+                                      <i class="fas fa-folder-open fa-lg"></i>
+                                      <span>Portfolio</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "contact" %}">
+                                      <i class="fas fa-at fa-lg"></i>
+                                      <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fab fa-blogger-b fa-lg"></i>
+                                      <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-light shadow-sm">
+                <div class="container d-flex justify-content-between" style="background: rgba(255, 255, 255, 0.93);">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <i class="fas fa-sitemap"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="container p-4">
+        {% if user_using_mobile %}
+            <div class="row" style="height: 70px"></div>
+        {% endif %}
+        <div class="row">
+            <h1 class="col-12 text-center">Experience</h1>
+            <p class="col-12 text-justify text-center p-1">
+                Praesent nec sem non velit vulputate finibus. Nulla sagittis mi sem, quis volutpat ligula elementum in. Vivamus auctor tortor id nibh laoreet, lacinia finibus justo hendrerit. Quisque molestie tempor felis, in dictum urna semper maximus. Nullam lacinia massa in sapien aliquam suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sollicitudin justo est, a consequat erat sollicitudin eget." %}
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+    </div>
+    <div class="container p-4">
+        <div class="row">
+            <h4 class="col-12 text-center">Association & others projects</h4>
+            <p class="col-12 text-justify text-center p-1">
+                Vivamus auctor tortor id nibh laoreet, lacinia finibus justo hendrerit. Quisque molestie tempor felis, in dictum urna semper maximus. Nullam lacinia massa in sapien aliquam suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sollicitudin justo est, a consequat erat sollicitudin eget.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXX XXXXXXXXXXXXX<br>XXXXXXXXXXXX XXXX XXXXXXXX<br>X months
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Aliquam justo metus, pharetra non tortor nec, consectetur rhoncus odio. Nunc a magna vel nibh sagittis ullamcorper ac in ante. Vestibulum tincidunt libero mauris, in interdum justo laoreet eget. Vivamus egestas tortor id nunc auctor bibendum vitae vitae elit.
+            </p>
+        </div>
+    </div>
+{% endblock %}

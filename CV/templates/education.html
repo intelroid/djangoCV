@@ -1,0 +1,119 @@
+{% extends "base_cv.html" %}
+
+{% block content %}
+    <div class="fixed-top text-right p-4">
+        {% if user_using_mobile %}
+            <div class="collapse" id="navbarHeader" style="background: rgba(255, 255, 255, 0.93);">
+                <div class="container">
+                    <div class="row">
+                        <div class="sidebar-sticky">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="{% url "cv" %}" class="nav-link active">
+                                        <i class="fas fa-home fa-lg"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url "about" %}" class="nav-link">
+                                        <i class="fas fa-user-tie fa-lg"></i>
+                                        <span>About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "skills" %}">
+                                      <i class="fas fa-cogs fa-lg"></i>
+                                      <span>Skills</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "experience" %}">
+                                      <i class="fas fa-briefcase fa-lg"></i>
+                                      <span>Experience</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "education" %}">
+                                      <i class="fas fa-graduation-cap fa-lg"></i>
+                                      <span>Education</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "portfolio" %}">
+                                      <i class="fas fa-folder-open fa-lg"></i>
+                                      <span>Portfolio</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "contact" %}">
+                                      <i class="fas fa-at fa-lg"></i>
+                                      <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fab fa-blogger-b fa-lg"></i>
+                                      <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-light shadow-sm">
+                <div class="container d-flex justify-content-between" style="background: rgba(255, 255, 255, 0.93);">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <i class="fas fa-sitemap"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="container p-4">
+        {% if user_using_mobile %}
+            <div class="row" style="height: 70px"></div>
+        {% endif %}
+        <div class="row">
+            <h1 class="col-12 text-center">Education</h1>
+            <p class="col-12 text-justify text-center p-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis urna. Integer commodo nisl sed massa lacinia congue. Nam iaculis neque quis elit tempus, id blandit felis iaculis. Quisque vitae urna ac urna pellentesque sodales sit amet vitae dolor. In egestas augue sed vehicula maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi fermentum velit dictum convallis laoreet. Morbi aliquet vehicula nisl, non ornare dolor pulvinar eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet est ante. Nam vehicula nisi sed velit tempor, vel venenatis neque cursus. Cras convallis sagittis tincidunt. Cras egestas faucibus lobortis.
+                In quis nibh tristique, lacinia turpis in, sollicitudin lorem. Mauris vitae velit lacus. Suspendisse non accumsan nisl. Morbi pulvinar diam augue, placerat scelerisque augue luctus sed. Etiam sed dapibus felis. Etiam ut nisl sit amet elit eleifend sagittis. Donec imperdiet, quam nec efficitur aliquet, nulla massa tincidunt leo, ac aliquam lectus erat nec nisl. Donec sollicitudin quam ac condimentum iaculis. Duis sed sodales tellus.
+                Ut sodales ornare auctor. Maecenas quis velit urna. Suspendisse ligula eros, sollicitudin ut egestas in, porttitor in mi. Vestibulum eget tempus dui, vitae posuere felis. Duis sit amet sagittis eros, posuere bibendum ipsum. Donec porta arcu urna, eget faucibus turpis tincidunt sed. Duis nec nisl nisl.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXXXXXXXXXXXXXX XXXXXXXXXX<br>XXXXX XXXX XXXXXXXXXXXX<br>X years
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis urna. Integer commodo nisl sed massa lacinia congue. Nam iaculis neque quis elit tempus, id blandit felis iaculis. Quisque vitae urna ac urna pellentesque sodales sit amet vitae dolor. In egestas augue sed vehicula maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi fermentum velit dictum convallis laoreet. Morbi aliquet vehicula nisl, non ornare dolor pulvinar eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet est ante. Nam vehicula nisi sed velit tempor, vel venenatis neque cursus. Cras convallis sagittis tincidunt. Cras egestas faucibus lobortis.
+                In quis nibh tristique, lacinia turpis in, sollicitudin lorem. Mauris vitae velit lacus. Suspendisse non accumsan nisl. Morbi pulvinar diam augue, placerat scelerisque augue luctus sed. Etiam sed dapibus felis. Etiam ut nisl sit amet elit eleifend sagittis. Donec imperdiet, quam nec efficitur aliquet, nulla massa tincidunt leo, ac aliquam lectus erat nec nisl. Donec sollicitudin quam ac condimentum iaculis. Duis sed sodales tellus.
+                Ut sodales ornare auctor. Maecenas quis velit urna. Suspendisse ligula eros, sollicitudin ut egestas in, porttitor in mi. Vestibulum eget tempus dui, vitae posuere felis. Duis sit amet sagittis eros, posuere bibendum ipsum. Donec porta arcu urna, eget faucibus turpis tincidunt sed. Duis nec nisl nisl.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                uXXXXXXXXXXXXXXXXX XXXXXXXXXX<br>XXXXX XXXX XXXXXXXXXXXX<br>X years
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis urna. Integer commodo nisl sed massa lacinia congue. Nam iaculis neque quis elit tempus, id blandit felis iaculis. Quisque vitae urna ac urna pellentesque sodales sit amet vitae dolor. In egestas augue sed vehicula maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi fermentum velit dictum convallis laoreet. Morbi aliquet vehicula nisl, non ornare dolor pulvinar eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet est ante. Nam vehicula nisi sed velit tempor, vel venenatis neque cursus. Cras convallis sagittis tincidunt. Cras egestas faucibus lobortis.
+                In quis nibh tristique, lacinia turpis in, sollicitudin lorem. Mauris vitae velit lacus. Suspendisse non accumsan nisl. Morbi pulvinar diam augue, placerat scelerisque augue luctus sed. Etiam sed dapibus felis. Etiam ut nisl sit amet elit eleifend sagittis. Donec imperdiet, quam nec efficitur aliquet, nulla massa tincidunt leo, ac aliquam lectus erat nec nisl. Donec sollicitudin quam ac condimentum iaculis. Duis sed sodales tellus.
+                Ut sodales ornare auctor. Maecenas quis velit urna. Suspendisse ligula eros, sollicitudin ut egestas in, porttitor in mi. Vestibulum eget tempus dui, vitae posuere felis. Duis sit amet sagittis eros, posuere bibendum ipsum. Donec porta arcu urna, eget faucibus turpis tincidunt sed. Duis nec nisl nisl.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-6 text-justify text-center p-1">
+                XXXXXXXXXXXXXXXXX XXXXXXXXXX<br>XXXXX XXXX XXXXXXXXXXXX<br>X years
+            </p>
+            <p class="col-6 text-justify text-center p-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec turpis urna. Integer commodo nisl sed massa lacinia congue. Nam iaculis neque quis elit tempus, id blandit felis iaculis. Quisque vitae urna ac urna pellentesque sodales sit amet vitae dolor. In egestas augue sed vehicula maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi fermentum velit dictum convallis laoreet. Morbi aliquet vehicula nisl, non ornare dolor pulvinar eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet est ante. Nam vehicula nisi sed velit tempor, vel venenatis neque cursus. Cras convallis sagittis tincidunt. Cras egestas faucibus lobortis.
+                In quis nibh tristique, lacinia turpis in, sollicitudin lorem. Mauris vitae velit lacus. Suspendisse non accumsan nisl. Morbi pulvinar diam augue, placerat scelerisque augue luctus sed. Etiam sed dapibus felis. Etiam ut nisl sit amet elit eleifend sagittis. Donec imperdiet, quam nec efficitur aliquet, nulla massa tincidunt leo, ac aliquam lectus erat nec nisl. Donec sollicitudin quam ac condimentum iaculis. Duis sed sodales tellus.
+                Ut sodales ornare auctor. Maecenas quis velit urna. Suspendisse ligula eros, sollicitudin ut egestas in, porttitor in mi. Vestibulum eget tempus dui, vitae posuere felis. Duis sit amet sagittis eros, posuere bibendum ipsum. Donec porta arcu urna, eget faucibus turpis tincidunt sed. Duis nec nisl nisl.
+            </p>
+        </div>
+    </div>
+{% endblock %}

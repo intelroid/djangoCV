@@ -1,0 +1,106 @@
+{% extends "base_cv.html" %}
+
+{% block content %}
+    <div class="fixed-top text-right p-4">
+        {% if user_using_mobile %}
+            <div class="collapse" id="navbarHeader" style="background: rgba(255, 255, 255, 0.93);">
+                <div class="container">
+                    <div class="row">
+                        <div class="sidebar-sticky">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="{% url "cv" %}" class="nav-link active">
+                                        <i class="fas fa-home fa-lg"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url "about" %}" class="nav-link">
+                                        <i class="fas fa-user-tie fa-lg"></i>
+                                        <span>About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "skills" %}">
+                                      <i class="fas fa-cogs fa-lg"></i>
+                                      <span>Skills</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "experience" %}">
+                                      <i class="fas fa-briefcase fa-lg"></i>
+                                      <span>Experience</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "education" %}">
+                                      <i class="fas fa-graduation-cap fa-lg"></i>
+                                      <span>Education</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "portfolio" %}">
+                                      <i class="fas fa-folder-open fa-lg"></i>
+                                      <span>Portfolio</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url "contact" %}">
+                                      <i class="fas fa-at fa-lg"></i>
+                                      <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fab fa-blogger-b fa-lg"></i>
+                                      <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-light shadow-sm">
+                <div class="container d-flex justify-content-between" style="background: rgba(255, 255, 255, 0.93);">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <i class="fas fa-sitemap"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="container p-4">
+        {% if user_using_mobile %}
+            <div class="row" style="height: 70px"></div>
+        {% endif %}
+        <div class="row">
+            <h1 class="col-12 text-center">About me</h1>
+            <p class="col-12 text-justify text-center p-1">
+                Name: Emmanuel Macron
+            </p>
+            <p class="col-12 text-justify text-center p-1">
+                Email: mr.x@mail.com
+            </p>
+            <p class="col-12 text-justify text-center p-1">
+                Phone: xx.xx.xx.xx.xx
+            </p>
+            <p class="col-12 text-justify text-center p-1">
+                Date of birth: 8 September 2018
+            </p>
+            <p class="col-12 text-justify text-center p-1">
+                Address: Somewhere in France
+            </p>
+            <p class="col-12 text-justify text-center p-1">
+                Nationality: French
+            </p>
+            <p class="col-12 text-justify text-center p-1">
+                Professional Profile<br>
+                Sed vel luctus quam. Sed finibus nisl eget purus ultrices, et facilisis tellus finibus. Integer congue pulvinar magna in lacinia. Phasellus luctus feugiat iaculis. Sed malesuada ante efficitur enim interdum, eu lobortis elit semper. Nam vitae neque id justo facilisis tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer eu arcu a turpis dictum interdum. Nunc a tincidunt augue, eget eleifend diam.
+            </p>
+        </div>
+    </div>
+{% endblock %}

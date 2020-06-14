@@ -1,0 +1,35 @@
+
+<head>
+	<meta charset="utf-8">
+	<title>Post - {{ object.title }}</title>
+</head>
+
+<body>
+	<p><strong>{{ object.title }}</strong></p>
+	
+	<p>
+		{% if object.get_previous %}
+
+		<a href="{{object.get_previous.get_absolute_url }}" title="prev">&larr; {{object.get_previous }}</a>
+		{% endif %}
+		
+
+	    {% if object.get_next %}
+	    | <a href="{{ object.get_next.get_absolute_url }}" title="next"> {{object.get_next }} &rarr;</a>
+        {% endif %}
+	</p>
+
+
+
+
+    <p> {{object.mod_date|date:"j F Y" }}</p>
+    
+   <br>
+   <br>
+   <div>
+    {{ object.text|linebreaks }}
+   </div>
+   <div>
+    <a href="{% url 'Post:post_list' %}">Post List</a>
+	</div>
+</body>
