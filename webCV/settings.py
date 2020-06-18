@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'Post',
+    #'Post',
+    'Posts',
     'CV',
 ]
 
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'webCV.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['webCV/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

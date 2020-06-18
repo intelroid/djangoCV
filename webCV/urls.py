@@ -16,14 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from home import views as home
-from Post import views as Post
+#from Post import views as Post
 from CV import views as CV
-
+from Posts import views as posts
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
    # path('',home.index,name='home'),
-    path('post/',include('Post.urls')),
-    path('cv/',include('CV.urls')),
+   # path('post/',include('Post.urls')),
+    path('',include('CV.urls')),
+    path('posts', posts.home, name='home'),
+    path('posts/',include('Posts.urls')),
+    
 ]

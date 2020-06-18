@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from CV import views
-from Post import views as post
+from Posts import views as post
 
 urlpatterns = [
     url(r'^$', views.cv, name='cv'),
