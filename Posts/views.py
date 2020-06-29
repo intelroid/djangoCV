@@ -40,10 +40,10 @@ def update(request, blog_id):
             blog.body = form.cleaned_data['body']
             blog.pub_date=timezone.now()
             blog.save()
-            return redirect('/Posts/detail/' + str(blog.id))
+            return redirect('/posts/detail/' + str(blog.id))
     else:
         form = BlogUpdate(instance = blog)
- 
+
         return render(request,'update.html', {'form':form})
 
 
@@ -72,11 +72,11 @@ def new(request):
 def search(request):
     blogs = Blog.objects.all().order_by('-id')
 
-    q = request.POST.get('q', "") 
+    q = request.POST.get('q', "")
 
     if q:
         blogs = blogs.filter(title__icontains=q)
         return render(request, 'search.html', {'blogs' : blogs, 'q' : q})
-    
+
     else:
         return render(request, 'search.html')

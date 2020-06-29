@@ -21,14 +21,14 @@ def about(request):
     return render(request, 'about_me.html', {'user_using_mobile': is_mobile(request)})
 
 
+#def skills(request):
+#    user_agent = get_user_agent(request)
+#    if user_agent.is_mobile or user_agent.is_tablet:
+#        return render(request, 'skill.html', {'user_using_mobile': True})
+#    return render(request, 'skill_prototype.html')
+
+
 def skills(request):
-    user_agent = get_user_agent(request)
-    if user_agent.is_mobile or user_agent.is_tablet:
-        return render(request, 'skill.html', {'user_using_mobile': True})
-    return render(request, 'skill_prototype.html')
-
-
-def skills_detailed(request):
     return render(request, 'skill.html', {'user_using_mobile': False})
 
 
